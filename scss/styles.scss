@@ -1,0 +1,444 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// IMPORT
+
+@import "utilities/variables";
+
+
+ /* ESTILOS DE HEADER */
+
+header{
+    background: linear-gradient( white, rgb(212, 95, 193));
+
+    img{
+        width: 200px;
+    }
+
+    .titulo{
+        color: $color-principal-letras;
+        font-size: 2.5rem;
+        padding-bottom: 1.2rem;
+        font-family: 'Inconsolata', monospace;
+        font-weight: bold;
+    }
+
+    .barra a{
+        color: $color-principal-letras;
+        font-size: $tamaño-fuente;
+        font-weight: 500;
+    }
+
+    .barraM:hover{
+        text-decoration: underline;
+    }
+
+    .barraA:hover{
+        color: $color-principal-letras;
+    }
+
+    .fondo a:active{
+        color: $color-principal-letras;
+        background-color: rgb(150, 149, 149);
+    }
+
+    .fondoDos a:visited{
+        color: $color-principal-letras;
+    }
+
+}
+
+/* ESTILOS DEL MAIN-INICIO */
+
+.estiloInicio main{
+    @include mainGeneral;
+
+    h1{
+        @include tituloH1;
+    }
+
+    .foto{
+        border-radius: 6rem;
+    }
+
+    .carro{
+        margin-bottom: 2.5rem ;
+    }
+
+    .card{
+        background:linear-gradient(white, rgb(212, 95, 193));
+        width: 350px;
+    }
+
+    .card p{
+        font-family: cursive;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+/* PROPIEDADES DEL MAIN-PROPUESTAS */
+
+.mainPropuestas{
+    @include mainGeneral;
+    
+    h1{
+        @include tituloH1;
+    }
+
+    .propuestas{
+        display: grid;
+        grid-template-areas: "img parrafo";
+        gap: 2rem;
+        display: flex;
+        justify-items: center;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    
+    .img{
+        @include img;
+        width: 50%;
+    }
+    
+    .parrafo{
+        grid-area: parrafo;
+        width: 300px;
+        padding: 5px;
+        font-size: 25px;
+        font-family: cursive;
+        text-align:start;
+        font-weight: bold;
+        background-color: rgb(158, 156, 156);
+        border-radius: 20px;
+        letter-spacing: 0.2;
+    }
+}
+
+/* PROPIEDADES DEL MAIN-NOSOTROS*/
+
+.mainNosotros{
+    @include mainGeneral;
+
+    h1{
+        @include tituloH1
+    }
+
+    .descripcion{
+        display: grid;
+        grid-template-areas: "imgN1 imgN2"
+                             "parrafoNos parrafoNos";
+        justify-items: center;
+        gap: 1rem;
+    }
+    
+    .imgN1{
+        grid-area: imgN1;
+        @include img;
+        width: 75%;
+    }
+    
+    .imgN2{
+        grid-area: imgN2;
+        @include img;
+        width: 75%;
+    }
+    
+    .parrafoNos{
+        grid-area: parrafoNos;
+        width: 75%;
+        margin-top: 2rem;
+        font-size: 25px;
+        font-family: cursive;
+        font-weight: bold;
+        background-color: rgb(158, 156, 156);
+        border-radius: 20px;
+        letter-spacing: 0.2;
+    }
+}
+
+/* PROPIEDADES DE TIENDA-DULCE */
+
+.mainTienda{
+    @include mainGeneral;
+
+    h1{
+        @include tituloH1;
+    }
+
+    div ul li{
+        list-style: none;
+    }
+    
+    .lista{
+        display: grid;
+        grid-template-areas:"pro1 pro2"
+                            "pro3 pro4"
+                            "pro5 pro6";
+        align-items:baseline;
+    }
+
+    img{
+        @include img;
+        width: 70%;
+    }
+    
+    .lista p{
+        padding: 10px;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    .lista button{
+        padding: 5px;
+        text-align: center;
+        border-color: rgb(228, 130, 187);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-radius: 15px;
+    }
+    
+    .pro1{
+        grid-area: pro1;
+        margin-bottom: 4.5rem;
+    }
+    
+    .pro2{
+        grid-area: pro2;
+        margin-bottom: 4.5rem;
+    }
+    
+    .pro3{
+        grid-area: pro3;
+        margin-bottom: 4.5rem;
+    }
+    
+    .pro4{
+        grid-area: pro4;
+        margin-bottom: 4.5rem;
+    }
+    
+    .pro5{
+        grid-area: pro5;
+        margin-bottom: 4.5rem;
+    }
+    
+    .pro6{
+        grid-area: pro6;
+        margin-bottom: 4.5rem;
+    }
+}
+
+/* PROPIEDADES DE CONTACTO */
+
+.mainContacto{
+    @include mainGeneral;
+
+    h1{
+        @include tituloH1;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+    }
+
+    .formulario{
+        margin: 10px;
+        border: solid 2px gray;
+        font-family:'Times New Roman', Times, serif;
+        width: 70%;
+    }
+    
+    .formulario legend{
+        font-family:cursive;
+        font-weight: bold;
+    }
+    
+    .formulario div{
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    
+    .nombres{
+        padding-left: 1rem;
+    }
+    
+    .mails{
+        padding-left: 1.9rem;
+    }
+    
+    .botones{
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+}
+
+/* PROPIEDADES DE ZOOM */
+    
+.zoom{
+    overflow: hidden;
+}
+
+.imgz{
+    border-radius: 5px;
+    box-shadow: 4px 5px gray;
+    transition: 0.8s;
+}
+
+.zoom:hover .imgz{
+    transform: scale(1.1);
+}
+
+.imgz1{
+    transition: 0.8s;
+}
+
+.zoom:hover .imgz1{
+    transform: scale(1.1);
+}
+
+/* PROPIEDADES DEL BOTON WPP*/
+
+.enlace{
+    position: fixed;
+    bottom: 10rem;
+    right: 0;
+}
+
+.colori{
+    background-color: rgb(79, 153, 9);
+    border-radius: 2rem;
+}
+
+/* PROPIEDADES DEL FOOTER */
+
+footer{
+    padding-bottom: 2rem;
+    background: linear-gradient(whitesmoke, gray);
+    border-top: 4px solid gray;
+
+    .seguinos ul li{
+        gap: 5px;
+    }
+
+    div a{
+        color: $color-secundario-letras;
+        text-decoration: none;
+        font-size: $tamaño-fuente;
+        font-weight: bold;
+    }
+
+    .parraFooter{
+        color: $color-secundario-letras;
+        font-size: $tamaño-fuente;
+        font-weight: bold;
+    }
+
+    .contacto{
+        color: rgb(65, 65, 65);
+        font-size: $tamaño-fuente;
+    }
+
+    .volver a{
+        color: $color-secundario-letras;
+        text-decoration: none;
+    }
+
+    .volver a:hover{
+        color:$color-secundario-letras;
+    }
+
+    .logoFooter{
+        padding: 10px;
+        font-size: 2.5rem;
+        font-family: 'Titan One', cursive;
+        color: $color-principal-letras;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 700px) and (min-width: 326px) {
+    .estiloInicio main{
+        .card{
+            width: 80%;
+        }
+    }
+
+    .propuestas{
+        display: grid;
+        grid-template-areas: "img"
+                             "parrafo";
+    }
+
+    .descripcion{
+        display: grid;
+        grid-template-areas: "imgN1"
+                             "imgN2"
+                             "parrafoNos";
+        gap: 2rem; 
+        justify-content:center;
+    }
+
+    .parrafoNos{
+        width: 400px;
+        text-align: center;
+    }
+
+    .lista{
+        display: grid;
+        grid-template-areas: "pro1"
+                             "pro2"
+                             "pro3"
+                             "pro4"
+                             "pro5"
+                             "pro6";
+    }
+
+}
+
+
+@media (max-width: 1000px) and (min-width: 701px) {
+    .estiloInicio main{
+        .card{
+            width: 80%;
+        }
+    }
+
+    .propuestas{
+        display: grid;
+        grid-template-areas: "img"
+                             "parrafo";
+    }
+
+    .descripcion{
+        display: grid;
+        grid-template-areas: "imgN1"
+                             "imgN2"
+                             "parrafoNos";
+        gap: 2rem; 
+        justify-content:center;
+    }
+
+    .lista{
+        display: grid;
+        grid-template-areas: "pro1 pro2"
+                             "pro3 pro4"
+                             "pro5 pro6";
+    }
+
+}
+
+

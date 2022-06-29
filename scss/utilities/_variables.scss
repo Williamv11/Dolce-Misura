@@ -22,3 +22,11 @@ $tamaño-fuente: 1.6rem;
     border-radius: 5px;
     box-shadow: 4px 5px gray;
 }
+
+%botones{
+    padding: 5px;
+    text-align: center;
+    border-color: rgb(228, 130, 187);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 15px;
+}

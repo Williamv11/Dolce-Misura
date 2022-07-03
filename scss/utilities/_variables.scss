@@ -4,29 +4,5 @@ $color-principal-letras: rgb(165, 29, 165);
 $color-secundario-letras: black;
 $tamaño-fuente: 1.6rem;
 
-@mixin tituloH1 {
-    padding: 1rem;
-    font-family: cursive;
-    font-weight: bold;
-    color: $color-principal-letras;
-}
 
-@mixin mainGeneral {
-    padding-top: 2rem;
-    padding-bottom: 10rem;
-    background-color:whitesmoke;
-    border-top: 5px solid rgb(255, 0, 234);
-}
 
-@mixin img {
-    border-radius: 5px;
-    box-shadow: 4px 5px gray;
-}
-
-%botones{
-    padding: 5px;
-    text-align: center;
-    border-color: rgb(228, 130, 187);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 15px;
-}

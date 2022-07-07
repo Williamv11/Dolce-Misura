@@ -14,14 +14,21 @@
 
 @import "utilities/extend";
 
+.estiloInicio{
+    width: 100%;
+    background-image: url(../img/fondos/melanie-boers-urrWQ8bYwcw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
  /* ESTILOS DE HEADER */
 
 header{
-    background: linear-gradient( white, rgb(212, 95, 193));
+    background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(212, 95, 193, 0.2));
 
     img{
-        width: 200px;
+        width: 9rem;
+        margin-left: 3rem;
     }
 
     .titulo{
@@ -32,10 +39,20 @@ header{
         font-weight: bold;
     }
 
+    .container-fluid{
+        display: flex;
+    }
+
+    .barra{
+        justify-content: end;
+
+    }
+
     .barra a{
         color: $color-principal-letras;
         font-size: $tamaño-fuente;
         font-weight: 500;
+
     }
 
     .barraM:hover{
@@ -60,10 +77,24 @@ header{
 /* ESTILOS DEL MAIN-INICIO */
 
 .estiloInicio main{
+    display: grid;
+    grid-template-areas: "inicio inicio"
+                         "mirar carro"
+                         "seccion seccion";
     @include mainGeneral;
 
-    h1{
+    .inicio{
+        grid-area: inicio;
         @include tituloH1;
+    }
+
+    .mirar{
+        grid-area: mirar;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Titan One', cursive;
+        color: $color-principal-letras;
+        text-align: center;
     }
 
     .foto{
@@ -71,12 +102,22 @@ header{
     }
 
     .carro{
-        margin-bottom: 2.5rem ;
+        grid-area: carro;
+        margin-bottom: 2.5rem;
+    }
+
+    .seccion{
+        grid-area: seccion;
+        margin-top: 3rem;
+        gap: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .card{
-        background:linear-gradient(white, rgb(212, 95, 193));
-        width: 350px;
+        background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(212, 95, 193, 0.2));
+        
     }
 
     .card p{
@@ -331,13 +372,20 @@ header{
 /* PROPIEDADES DEL FOOTER */
 
 footer{
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(128, 128, 128, 0.2));
     padding-bottom: 2rem;
-    background: linear-gradient(whitesmoke, gray);
-    border-top: 4px solid gray;
     display: flex;
+    text-align: center;
     justify-content: space-evenly;
-    align-items: center;
     gap: 30px;
+
+    div{
+        margin-top: 2rem;
+    }
+
+    .seguinos{
+        margin-top: 2rem;
+    }
 
     .seguinos ul li{
         gap: 5px;
@@ -357,7 +405,7 @@ footer{
     }
 
     .contacto{
-        color: rgb(65, 65, 65);
+        color: rgb(39, 39, 39);
         font-size: $tamaño-fuente;
     }
 
@@ -412,7 +460,7 @@ footer{
     }
 
     .mainNosotros .parrafoNos{
-        width: 75%px;
+        width: 75%;
         text-align: center;
     }
 

@@ -11,11 +11,22 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 15px; }
 
-.estiloInicio {
-  width: 100%;
-  background-image: url(../img/fondos/melanie-boers-urrWQ8bYwcw-unsplash.jpg);
-  background-size: cover;
-  background-position: center; }
+.estiloInicio main .contactar p, .mainPropuestas .parrafo, .mainPropuestas .envio {
+  width: 75%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  border-radius: 1rem;
+  text-align: center;
+  letter-spacing: 0.2;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(212, 95, 193, 0.2)); }
+
+.estiloInicio main .seccion, .mainPropuestas .seccionImg, .mainPropuestas .seccionImg2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem; }
 
 /* ESTILOS DE HEADER */
 header {
@@ -35,7 +46,7 @@ header {
     justify-content: end; }
   header .barra a {
     color: #a51da5;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 500; }
   header .barraM:hover {
     text-decoration: underline; }
@@ -48,86 +59,122 @@ header {
     color: #a51da5; }
 
 /* ESTILOS DEL MAIN-INICIO */
+.estiloInicio {
+  width: 100%;
+  background-image: url(../img/fondos/melanie-boers-urrWQ8bYwcw-unsplash.jpg);
+  background-size: cover;
+  background-position: center; }
+
 .estiloInicio main {
   display: grid;
-  grid-template-areas: "inicio inicio" "mirar carro" "seccion seccion";
+  grid-template-areas: "inicio inicio" "mirar carro" "seccion seccion" "contactar contactar";
   padding-top: 2rem;
   padding-bottom: 10rem; }
   .estiloInicio main .inicio {
     grid-area: inicio;
     text-align: center;
-    padding: 1rem;
-    font-family: cursive;
+    padding: 3rem;
+    font-family: 'Titan One', cursive;
     font-weight: bold;
     color: #a51da5; }
   .estiloInicio main .mirar {
     grid-area: mirar;
     text-align: center;
+    align-self: center;
     font-size: 3rem;
     font-family: 'Titan One', cursive;
     color: #a51da5;
-    text-align: center; }
+    transition: 0.8s; }
+  .estiloInicio main .mirar:hover {
+    transform: scale(1.2); }
+  .estiloInicio main .divCarro {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .estiloInicio main .foto {
     border-radius: 6rem; }
   .estiloInicio main .carro {
     grid-area: carro;
     margin-bottom: 2.5rem; }
+  .estiloInicio main .carousel-inner {
+    width: 500px; }
+  .estiloInicio main .carousel {
+    width: 500px; }
   .estiloInicio main .seccion {
     grid-area: seccion;
-    margin-top: 3rem;
-    gap: 2rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
+    margin-top: 5rem; }
   .estiloInicio main .card {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(212, 95, 193, 0.2)); }
   .estiloInicio main .card p {
     font-family: cursive;
     font-size: 1.8rem;
     font-weight: bold; }
+  .estiloInicio main .contactar {
+    grid-area: contactar;
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem; }
+    .estiloInicio main .contactar p a {
+      color: #a51da5;
+      text-decoration: none; }
+  .estiloInicio main .contactar p a:hover {
+    text-decoration: underline; }
 
 /* PROPIEDADES DEL MAIN-PROPUESTAS */
+.estiloPropuestas {
+  background-image: url(../img/fondos/aurela-redenica-hw3xRyhs1JI-unsplash.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center; }
+
 .mainPropuestas {
   padding-top: 2rem;
-  padding-bottom: 10rem; }
+  padding-bottom: 10rem;
+  display: grid;
+  grid-template-areas: "h1Pro h1Pro h1Pro h1Pro" "parrafo parrafo parrafo parrafo" "seccionImg seccionImg seccionImg seccionImg" "seccionImg2 seccionImg2 seccionImg2 seccionImg2" "envio envio envio envio"; }
   .mainPropuestas h1 {
+    grid-area: h1Pro;
     text-align: center;
-    padding: 1rem;
-    font-family: cursive;
+    padding: 3rem;
+    font-family: 'Titan One', cursive;
     font-weight: bold;
     color: #a51da5; }
   .mainPropuestas .propuestas {
-    display: grid;
-    grid-template-areas: "img parrafo";
-    gap: 2rem;
-    display: flex;
-    justify-items: center;
-    justify-content: space-evenly;
-    align-items: center; }
-  .mainPropuestas .img {
-    border-radius: 5px;
-    box-shadow: 4px 5px gray;
-    width: 50%; }
-  .mainPropuestas .parrafo {
     grid-area: parrafo;
+    display: flex;
+    justify-content: center;
+    justify-items: center; }
+  .mainPropuestas .seccionImg {
+    grid-area: seccionImg; }
+  .mainPropuestas .seccionImg2 {
+    grid-area: seccionImg2; }
+  .mainPropuestas img {
+    border-radius: 5px;
+    box-shadow: 4px 5px rgba(212, 95, 193, 0.2);
     width: 300px;
-    padding: 5px;
-    font-size: 2rem;
-    font-family: cursive;
-    text-align: start;
-    font-weight: bold;
-    background-color: #9e9c9c;
-    border-radius: 20px;
-    letter-spacing: 0.2; }
+    margin-top: 2rem; }
+  .mainPropuestas .propuestas1 {
+    grid-area: envio;
+    display: flex;
+    justify-content: center; }
+  .mainPropuestas .envio {
+    margin-top: 3rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(212, 95, 193, 0.8)); }
 
 /* PROPIEDADES DEL MAIN-NOSOTROS*/
+.estiloNosotros {
+  background-image: url(../img/fondos/zach-miles-BE9AifuJfD4-unsplash.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center; }
+
 .mainNosotros {
   padding-top: 2rem;
   padding-bottom: 10rem; }
   .mainNosotros h1 {
     text-align: center;
-    padding: 1rem;
-    font-family: cursive;
+    padding: 3rem;
+    font-family: 'Titan One', cursive;
     font-weight: bold;
     color: #a51da5; }
   .mainNosotros .descripcion {
@@ -138,12 +185,12 @@ header {
   .mainNosotros .imgN1 {
     grid-area: imgN1;
     border-radius: 5px;
-    box-shadow: 4px 5px gray;
+    box-shadow: 4px 5px rgba(212, 95, 193, 0.2);
     width: 75%; }
   .mainNosotros .imgN2 {
     grid-area: imgN2;
     border-radius: 5px;
-    box-shadow: 4px 5px gray;
+    box-shadow: 4px 5px rgba(212, 95, 193, 0.2);
     width: 75%; }
   .mainNosotros .parrafoNos {
     grid-area: parrafoNos;
@@ -162,8 +209,8 @@ header {
   padding-bottom: 10rem; }
   .mainTienda h1 {
     text-align: center;
-    padding: 1rem;
-    font-family: cursive;
+    padding: 3rem;
+    font-family: 'Titan One', cursive;
     font-weight: bold;
     color: #a51da5; }
   .mainTienda div ul li {
@@ -174,7 +221,7 @@ header {
     align-items: baseline; }
   .mainTienda img {
     border-radius: 5px;
-    box-shadow: 4px 5px gray;
+    box-shadow: 4px 5px rgba(212, 95, 193, 0.2);
     width: 70%; }
   .mainTienda .lista p {
     padding: 10px;
@@ -212,8 +259,8 @@ header {
   padding-bottom: 10rem; }
   .mainContacto h1 {
     text-align: center;
-    padding: 1rem;
-    font-family: cursive;
+    padding: 3rem;
+    font-family: 'Titan One', cursive;
     font-weight: bold;
     color: #a51da5; }
   .mainContacto form {
@@ -272,7 +319,7 @@ header {
 
 /* PROPIEDADES DEL FOOTER */
 footer {
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(128, 128, 128, 0.2));
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(34, 34, 34, 0.4));
   padding-bottom: 2rem;
   display: flex;
   text-align: center;
@@ -287,15 +334,15 @@ footer {
   footer div a {
     color: black;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: bold; }
   footer .parraFooter {
     color: black;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: bold; }
   footer .contacto {
     color: #272727;
-    font-size: 1.6rem; }
+    font-size: 1.8rem; }
   footer .volver a {
     color: black;
     text-decoration: none; }
@@ -308,22 +355,24 @@ footer {
     color: #a51da5; }
 
 /* MEDIA QUERIES */
-@media (max-width: 700px) and (min-width: 326px) {
-  .estiloInicio main .card {
-    width: 80%; }
-  .estiloInicio main .card p {
-    font-family: cursive;
-    font-size: 2.3rem;
-    font-weight: bold; }
-  .mainPropuestas .propuestas {
+@media (max-width: 700px) and (min-width: 320px) {
+  .estiloInicio main {
     display: grid;
-    grid-template-areas: "img" "parrafo"; }
-    .mainPropuestas .propuestas img {
-      width: 75%; }
+    grid-template-areas: "inicio" "mirar" "carro" "seccion"; }
+    .estiloInicio main .carousel-inner {
+      width: 300px; }
+    .estiloInicio main .carousel {
+      width: 300px; }
+    .estiloInicio main .card {
+      width: 80%; }
+    .estiloInicio main .card p {
+      font-family: cursive;
+      font-size: 2.3rem;
+      font-weight: bold; }
   .mainNosotros .descripcion {
     display: grid;
     grid-template-areas: "imgN1" "imgN2" "parrafoNos";
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center; }
   .mainNosotros .parrafoNos {
     width: 75%;
@@ -334,7 +383,11 @@ footer {
   footer {
     flex-direction: column; } }
 
-@media (max-width: 1000px) and (min-width: 701px) {
+@media (max-width: 950px) and (min-width: 701px) {
+  .estiloInicio main .carousel-inner {
+    width: 400px; }
+  .estiloInicio main .carousel {
+    width: 400px; }
   .estiloInicio main .card {
     width: 80%; }
   .estiloInicio main .card p {

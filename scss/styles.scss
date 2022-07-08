@@ -14,12 +14,7 @@
 
 @import "utilities/extend";
 
-.estiloInicio{
-    width: 100%;
-    background-image: url(../img/fondos/melanie-boers-urrWQ8bYwcw-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
+
 
  /* ESTILOS DE HEADER */
 
@@ -76,11 +71,19 @@ header{
 
 /* ESTILOS DEL MAIN-INICIO */
 
+.estiloInicio{
+    width: 100%;
+    background-image: url(../img/fondos/melanie-boers-urrWQ8bYwcw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .estiloInicio main{
     display: grid;
     grid-template-areas: "inicio inicio"
                          "mirar carro"
-                         "seccion seccion";
+                         "seccion seccion"
+                         "contactar contactar";
     @include mainGeneral;
 
     .inicio{
@@ -91,10 +94,21 @@ header{
     .mirar{
         grid-area: mirar;
         text-align: center;
+        align-self: center;
         font-size: 3rem;
         font-family: 'Titan One', cursive;
         color: $color-principal-letras;
-        text-align: center;
+        transition: 0.8s;
+    }
+
+    .mirar:hover{
+        transform: scale(1.2);
+    } 
+
+    .divCarro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .foto{
@@ -106,13 +120,18 @@ header{
         margin-bottom: 2.5rem;
     }
 
+    .carousel-inner{
+        width: 500px;
+    }
+        
+    .carousel{
+        width: 500px;
+    }
+
     .seccion{
         grid-area: seccion;
-        margin-top: 3rem;
-        gap: 2rem;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        margin-top: 5rem;
+        @extend %seccion;
     }
 
     .card{
@@ -125,48 +144,101 @@ header{
         font-size: 1.8rem;
         font-weight: bold;
     }
+
+    .contactar{
+        grid-area: contactar;
+        display: flex;
+        justify-content: center;
+        margin-top: 8rem;
+        
+
+        p{
+            @extend %textos;
+
+            a{
+                color: $color-principal-letras;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .contactar p a:hover{
+        text-decoration: underline;
+    }
 }
 
 /* PROPIEDADES DEL MAIN-PROPUESTAS */
 
+.estiloPropuestas{
+    background-image: url(../img/fondos/aurela-redenica-hw3xRyhs1JI-unsplash.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
 .mainPropuestas{
     @include mainGeneral;
+    display: grid;
+    grid-template-areas: "h1Pro h1Pro h1Pro h1Pro"
+                         "parrafo parrafo parrafo parrafo"
+                         "seccionImg seccionImg seccionImg seccionImg"
+                         "seccionImg2 seccionImg2 seccionImg2 seccionImg2"
+                         "envio envio envio envio";
     
     h1{
+        grid-area: h1Pro;
         @include tituloH1;
     }
 
     .propuestas{
-        display: grid;
-        grid-template-areas: "img parrafo";
-        gap: 2rem;
-        display: flex;
-        justify-items: center;
-        justify-content: space-evenly;
-        align-items: center;
-        
-    }
-    
-    .img{
-        @include img;
-        width: 50%;
-    }
-    
-    .parrafo{
         grid-area: parrafo;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .parrafo{
+        @extend %textos;
+    }
+    
+    .seccionImg{
+        grid-area: seccionImg;
+        @extend %seccion;
+    }
+
+    .seccionImg2{
+        grid-area: seccionImg2;
+        @extend %seccion;
+    }
+
+    img{
+        @include img;
         width: 300px;
-        padding: 5px;
-        font-size: 2rem;
-        font-family: cursive;
-        text-align:start;
-        font-weight: bold;
-        background-color: rgb(158, 156, 156);
-        border-radius: 20px;
-        letter-spacing: 0.2;
+        margin-top: 2rem;
+    }
+
+    .propuestas1{
+        grid-area: envio;
+        display: flex;
+        justify-content: center;
+    }
+
+    .envio{
+        @extend %textos;
+        margin-top: 3rem;
+        background:linear-gradient(rgba(255, 255, 255, 0.8), rgba(212, 95, 193, 0.8));
     }
 }
 
 /* PROPIEDADES DEL MAIN-NOSOTROS*/
+
+.estiloNosotros{
+    background-image: url(../img/fondos/zach-miles-BE9AifuJfD4-unsplash.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
 
 .mainNosotros{
     @include mainGeneral;
@@ -372,7 +444,7 @@ header{
 /* PROPIEDADES DEL FOOTER */
 
 footer{
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(128, 128, 128, 0.2));
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(34, 34, 34, 0.4));
     padding-bottom: 2rem;
     display: flex;
     text-align: center;
@@ -428,8 +500,24 @@ footer{
 
 /* MEDIA QUERIES */
 
-@media (max-width: 700px) and (min-width: 326px) {
+@media (max-width: 700px) and (min-width: 320px) {
     .estiloInicio main{
+        display: grid;
+        grid-template-areas: "inicio"
+                             "mirar"
+                             "carro"
+                             "seccion";
+
+        
+
+        .carousel-inner{
+            width: 300px;
+        }
+            
+        .carousel{
+            width: 300px;
+        }
+
         .card{
             width: 80%;
         }
@@ -440,22 +528,12 @@ footer{
         }
     }
 
-    .mainPropuestas .propuestas{
-        display: grid;
-        grid-template-areas: "img"
-                             "parrafo";
-
-        img{
-            width: 75%;
-        }
-    }
-
     .mainNosotros .descripcion{
         display: grid;
         grid-template-areas: "imgN1"
                              "imgN2"
                              "parrafoNos";
-        gap: 2rem; 
+        gap: 1rem; 
         justify-content:center;
     }
 
@@ -481,8 +559,20 @@ footer{
 }
 
 
-@media (max-width: 1000px) and (min-width: 701px) {
+@media (max-width: 950px) and (min-width: 701px) {
     .estiloInicio main{
+        .carousel-inner{
+
+            width: 400px;
+            
+            }
+            
+            .carousel{
+            
+            width: 400px;
+            
+            }
+
         .card{
             width: 80%;
         }

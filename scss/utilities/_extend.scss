@@ -7,3 +7,22 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 15px;
 }
+
+%textos{
+    width: 75%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    border-radius: 1rem;
+    text-align: center;
+    letter-spacing: 0.2;
+    background:linear-gradient(rgba(255, 255, 255, 0.2), rgba(212, 95, 193, 0.2));
+}
+
+%seccion{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}

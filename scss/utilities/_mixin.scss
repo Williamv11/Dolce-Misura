@@ -2,8 +2,8 @@
 
 @mixin tituloH1 {
     text-align: center;
-    padding: 1rem;
-    font-family: cursive;
+    padding: 3rem;
+    font-family: 'Titan One', cursive;
     font-weight: bold;
     color: $color-principal-letras;
 }
@@ -16,5 +16,5 @@
 
 @mixin img {
     border-radius: 5px;
-    box-shadow: 4px 5px gray;
+    box-shadow: 4px 5px rgba(212, 95, 193, 0.2);
 }

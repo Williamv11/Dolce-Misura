@@ -4,19 +4,21 @@
   padding: 0;
   box-sizing: border-box; }
 
-.mainTienda .lista button {
+.mainTienda .lista button, .mainContacto .botones {
+  width: 5rem;
   padding: 5px;
   text-align: center;
   border-color: #e482bb;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 15px; }
 
-.estiloInicio main .contactar p, .mainPropuestas .parrafo, .mainPropuestas .envio {
+.estiloInicio main .contactar p, .mainPropuestas .parrafo, .mainPropuestas .envio, .mainNosotros .parrafoNos {
   width: 75%;
   font-size: 1.8rem;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: black;
+  text-shadow: 1px 1px gray;
   border-radius: 1rem;
   text-align: center;
   letter-spacing: 0.2;
@@ -152,7 +154,10 @@ header {
     border-radius: 5px;
     box-shadow: 4px 5px rgba(212, 95, 193, 0.2);
     width: 300px;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    transition: 0.5s; }
+  .mainPropuestas img:hover {
+    transform: scale(1.2); }
   .mainPropuestas .propuestas1 {
     grid-area: envio;
     display: flex;
@@ -167,6 +172,8 @@ header {
   width: 100%;
   background-size: cover;
   background-position: center; }
+  .estiloNosotros header .barra a {
+    color: #c448c4; }
 
 .mainNosotros {
   padding-top: 2rem;
@@ -193,17 +200,18 @@ header {
     box-shadow: 4px 5px rgba(212, 95, 193, 0.2);
     width: 75%; }
   .mainNosotros .parrafoNos {
-    grid-area: parrafoNos;
-    width: 75%;
-    margin-top: 2rem;
-    font-size: 20px;
-    font-family: cursive;
-    font-weight: bold;
-    background-color: #9e9c9c;
-    border-radius: 20px;
-    letter-spacing: 0.2; }
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(212, 95, 193, 0.6)); }
+    .mainNosotros .parrafoNos span {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem; }
 
 /* PROPIEDADES DE TIENDA-DULCE */
+.estiloDulce {
+  background-image: url(../img/fondos/toa-heftiba-U_zIfKfEoRM-unsplash.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center; }
+
 .mainTienda {
   padding-top: 2rem;
   padding-bottom: 10rem; }
@@ -217,12 +225,27 @@ header {
     list-style: none; }
   .mainTienda .lista {
     display: grid;
-    grid-template-areas: "pro1 pro2" "pro3 pro4" "pro5 pro6";
-    align-items: baseline; }
+    grid-template-areas: "pro1 pro2" "pro3 pro4" "pro5 pro6"; }
+    .mainTienda .lista li {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
   .mainTienda img {
     border-radius: 5px;
     box-shadow: 4px 5px rgba(212, 95, 193, 0.2);
     width: 70%; }
+  .mainTienda .carta img {
+    width: 100%; }
+  .mainTienda .carta div {
+    text-align: center; }
+  .mainTienda .carta .divCarta {
+    position: relative;
+    transition: 0.9s; }
+  .mainTienda .carta .divCarta p {
+    display: none;
+    position: absolute; }
+  .mainTienda .carta div:hover > p {
+    display: block; }
   .mainTienda .lista p {
     padding: 10px;
     font-family: 'Times New Roman', Times, serif;
@@ -254,6 +277,12 @@ header {
     padding-top: 2rem; }
 
 /* PROPIEDADES DE CONTACTO */
+.estiloContacto {
+  background-image: url(../img/fondos/slashio-photography-DSH9AHPKoWw-unsplash.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center; }
+
 .mainContacto {
   padding-top: 2rem;
   padding-bottom: 10rem; }
@@ -267,12 +296,16 @@ header {
     display: flex;
     justify-content: center; }
   .mainContacto .formulario {
+    width: 75%;
     margin: 10px;
     border: solid 2px gray;
-    font-family: 'Times New Roman', Times, serif;
-    width: 70%; }
+    border-radius: 1rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4));
+    box-shadow: 4px 5px rgba(155, 155, 155, 0.3);
+    font-size: 1.3rem; }
   .mainContacto .formulario legend {
     font-family: cursive;
+    font-size: 1.8rem;
     font-weight: bold; }
   .mainContacto .formulario div {
     padding: 5px;
@@ -283,11 +316,9 @@ header {
     padding-left: 1rem; }
   .mainContacto .mails {
     padding-left: 1.9rem; }
-  .mainContacto .botones {
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .mainContacto .mensaje {
+    width: 500px;
+    height: 250px; }
 
 /* PROPIEDADES DE ZOOM */
 .zoom {
@@ -356,9 +387,10 @@ footer {
 
 /* MEDIA QUERIES */
 @media (max-width: 700px) and (min-width: 320px) {
+  /* INICIO */
   .estiloInicio main {
     display: grid;
-    grid-template-areas: "inicio" "mirar" "carro" "seccion"; }
+    grid-template-areas: "inicio" "mirar" "carro" "seccion" "contactar"; }
     .estiloInicio main .carousel-inner {
       width: 300px; }
     .estiloInicio main .carousel {
@@ -369,6 +401,7 @@ footer {
       font-family: cursive;
       font-size: 2.3rem;
       font-weight: bold; }
+  /* NOSOTROS */
   .mainNosotros .descripcion {
     display: grid;
     grid-template-areas: "imgN1" "imgN2" "parrafoNos";
@@ -377,13 +410,19 @@ footer {
   .mainNosotros .parrafoNos {
     width: 75%;
     text-align: center; }
+  /* TIENDA */
   .mainTienda .lista {
     display: grid;
     grid-template-areas: "pro1" "pro2" "pro3" "pro4" "pro5" "pro6"; }
   footer {
-    flex-direction: column; } }
+    flex-direction: column; }
+  /* CONTACTO */
+  .mainContacto .mensaje {
+    width: 200px;
+    height: 250px; } }
 
 @media (max-width: 950px) and (min-width: 701px) {
+  /* INICIO */
   .estiloInicio main .carousel-inner {
     width: 400px; }
   .estiloInicio main .carousel {
@@ -394,16 +433,19 @@ footer {
     font-family: cursive;
     font-size: 2.1rem;
     font-weight: bold; }
+  /* PROPUESTAS */
   .mainPropuestas .propuestas {
     display: grid;
     grid-template-areas: "img" "parrafo"; }
     .mainPropuestas .propuestas img {
       width: 75%; }
+  /* NOSOTROS */
   .mainNosotros .descripcion {
     display: grid;
     grid-template-areas: "imgN1" "imgN2" "parrafoNos";
     gap: 2rem;
     justify-content: center; }
+  /* TIENDA */
   .mainTienda .lista {
     display: grid;
     grid-template-areas: "pro1 pro2" "pro3 pro4" "pro5 pro6"; }

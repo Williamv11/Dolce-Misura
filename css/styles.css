@@ -107,7 +107,7 @@ header {
     color: #a51da5; }
   .mainNosotros .descripcion {
     display: grid;
-    grid-template-areas: "imgN1 imgN2" "parrafoNos parrafoNos";
+    grid-template-areas: "imgN1 imgN2" "parrafoNos parrafoNos";
     justify-items: center;
     gap: 1rem; }
   .mainNosotros .imgN1 {
@@ -146,7 +146,7 @@ header {
     list-style: none; }
   .mainTienda .lista {
     display: grid;
-    grid-template-areas: "pro1 pro2" "pro3 pro4" "pro5 pro6";
+    grid-template-areas: "pro1 pro2" "pro3 pro4" "pro5 pro6";
     align-items: baseline; }
   .mainTienda img {
     border-radius: 5px;
@@ -291,12 +291,12 @@ footer {
     font-weight: bold; }
   .mainPropuestas .propuestas {
     display: grid;
-    grid-template-areas: "img" "parrafo"; }
+    grid-template-areas: "img" "parrafo"; }
     .mainPropuestas .propuestas img {
       width: 75%; }
   .mainNosotros .descripcion {
     display: grid;
-    grid-template-areas: "imgN1" "imgN2" "parrafoNos";
+    grid-template-areas: "imgN1" "imgN2" "parrafoNos";
     gap: 2rem;
     justify-content: center; }
   .mainNosotros .parrafoNos {
@@ -304,7 +304,7 @@ footer {
     text-align: center; }
   .mainTienda .lista {
     display: grid;
-    grid-template-areas: "pro1" "pro2" "pro3" "pro4" "pro5" "pro6"; }
+    grid-template-areas: "pro1" "pro2" "pro3" "pro4" "pro5" "pro6"; }
   footer {
     flex-direction: column; } }
 
@@ -317,16 +317,16 @@ footer {
     font-weight: bold; }
   .mainPropuestas .propuestas {
     display: grid;
-    grid-template-areas: "img" "parrafo"; }
+    grid-template-areas: "img" "parrafo"; }
     .mainPropuestas .propuestas img {
       width: 75%; }
   .mainNosotros .descripcion {
     display: grid;
-    grid-template-areas: "imgN1" "imgN2" "parrafoNos";
+    grid-template-areas: "imgN1" "imgN2" "parrafoNos";
     gap: 2rem;
     justify-content: center; }
   .mainTienda .lista {
     display: grid;
-    grid-template-areas: "pro1 pro2" "pro3 pro4" "pro5 pro6"; }
+    grid-template-areas: "pro1 pro2" "pro3 pro4" "pro5 pro6"; }
   footer {
     flex-direction: column; } }

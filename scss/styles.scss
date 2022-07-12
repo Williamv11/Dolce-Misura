@@ -66,7 +66,6 @@ header{
     .fondoDos a:visited{
         color: $color-principal-letras;
     }
-
 }
 
 /* ESTILOS DEL MAIN-INICIO */
@@ -84,7 +83,6 @@ header{
                          "mirar carro"
                          "seccion seccion"
                          "contactar contactar";
-    @include mainGeneral;
 
     .inicio{
         grid-area: inicio;
@@ -178,7 +176,6 @@ header{
 }
 
 .mainPropuestas{
-    @include mainGeneral;
     display: grid;
     grid-template-areas: "h1Pro h1Pro h1Pro h1Pro"
                          "parrafo parrafo parrafo parrafo"
@@ -252,7 +249,6 @@ header{
 }
 
 .mainNosotros{
-    @include mainGeneral;
 
     h1{
         @include tituloH1
@@ -296,107 +292,178 @@ header{
     background-size: cover;
     background-position: center;
 
+
 }
 
 .mainTienda{
-    @include mainGeneral;
 
     h1{
-        @include tituloH1;
+        @include tituloH1
     }
 
-    div ul li{
-        list-style: none;
-    }
-    
-    .lista{
-        display: grid;
-        grid-template-areas:"pro1 pro2"
-                            "pro3 pro4"
-                            "pro5 pro6";
-        
-        li{
-            display: flex;
-            flex-direction: column;
-            align-items: center
-        }                    
+    .seccion{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        @extend %seccion;
     }
 
-    img{
-        @include img;
-        width: 70%;
-    }
-    
-    .carta img{
-        width: 100%;
-    }
-
-    .carta div {
+    .card{
+        background:linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4));
         text-align: center;
+        border-radius: 1rem;
     }
 
-    .carta .divCarta{
-        position: relative;
-        transition: 0.9s;
-    }
-
-    .carta .divCarta p{
-        display: none;
-        position: absolute;
-
-    }
-
-    .carta div:hover >p{
-        display: block;   
-    }
-    
-    .lista p{
-        padding: 10px;
-        font-family:'Times New Roman', Times, serif;
-        font-size: 1.3rem;
+    .card p{
+        font-family: cursive;
+        font-size: 1.8rem;
         font-weight: bold;
-    }
-    
-    .lista button{
-        @extend %botones;
-    }
-    
-    .pro1{
-        grid-area: pro1;
-        margin-bottom: 4.5rem;
-        padding-top: 1rem;
-        
         
     }
-    
-    .pro2{
-        grid-area: pro2;
-        margin-bottom: 4.5rem;
-        padding-top: 1rem;
+
+    a{
+        @include enlacePrecio;
+    }
+
+    .contactarTienda{
+        grid-area: contactar;
+        display: flex;
+        justify-content: center;
+        margin-top: 8rem;
+        
+
+        p{
+            @extend %textos;
+            background:linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4));
+
+            a{
+                font-size: 1.8rem;
+                color: $color-principal-letras;
+                text-decoration: none;
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+}
+
+/* PROPIEDADES DE TIENDA-SALADO */
+
+.estiloSalado{
+    background-image: url(../img/fondos/zura-narimanishvili-5iX4W5tIjYM-unsplash.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.mainTiendaSalada{
+
+    h1{
+        @include tituloH1
+    }
+
+    .seccion{
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+        @extend %seccion;
+    }
+
+    .card{
+        background:linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4));
+        text-align: center;
+        border-radius: 1rem;
+    }
+
+    .card p{
+        font-family: cursive;
+        font-size: 1.8rem;
+        font-weight: bold;
+        
+    }
+
+    a{
+        @include enlacePrecio;
+    }
+
+    .contactarTienda{
+        grid-area: contactar;
+        display: flex;
+        justify-content: center;
+        margin-top: 8rem;
+        
+
+        p{
+            @extend %textos;
+            background:linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4));
+
+            a{
+                font-size: 1.8rem;
+                color: $color-principal-letras;
+                text-decoration: none;
+                background-color: rgba(255, 255, 255, 0);
+            }
+        }
+    }
+}
+
+/* PROPIEDADES DE TIENDA-REGALOS */
+
+.estiloRegalos{
+    background-image: url(../img/fondos/jojo-yuen-sharemyfoodd-hidpWiMIFw0-unsplash.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.mainTiendaRegalos{
+
+    h1{
+        @include tituloH1
+    }
+
+    .seccion{
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+        @extend %seccion;
+    }
+
+    .card{
+        background:linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4));
+        text-align: center;
+        border-radius: 1rem;
+    }
+
+    .card p{
+        font-family: cursive;
+        font-size: 1.8rem;
+        font-weight: bold;
+        
+    }
+
+    a{
+        @include enlacePrecio;
     }
     
-    .pro3{
-        grid-area: pro3;
-        margin-bottom: 4.5rem;
-        padding-top: 1rem;
-    }
-    
-    .pro4{
-        grid-area: pro4;
-        margin-bottom: 4.5rem;
-        padding-top: 1rem;
-    }
-    
-    .pro5{
-        grid-area: pro5;
-        margin-bottom: 4.5rem;
-        padding-top: 2rem;
-    }
-    
-    .pro6{
-        grid-area: pro6;
-        margin-bottom: 4.5rem;
-        padding-top: 2rem;
+    .contactarTienda{
+        grid-area: contactar;
+        display: flex;
+        justify-content: center;
+        margin-top: 8rem;
+        
+
+        p{
+            @extend %textos;
+            background:linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4));
+
+            a{
+                font-size: 1.8rem;
+                color: $color-principal-letras;
+                text-decoration: none;
+                background-color: rgba(255, 255, 255, 0);
+            }
+        }
     }
 }
 
@@ -410,7 +477,6 @@ header{
 }
 
 .mainContacto{
-    @include mainGeneral;
 
     h1{
         @include tituloH1;
@@ -468,21 +534,12 @@ header{
     overflow: hidden;
 }
 
-.imgz{
+.seccion div{
     border-radius: 5px;
-    box-shadow: 4px 5px gray;
     transition: 0.8s;
 }
 
-.zoom:hover .imgz{
-    transform: scale(1.1);
-}
-
-.imgz1{
-    transition: 0.8s;
-}
-
-.zoom:hover .imgz1{
+.seccion div:hover{
     transform: scale(1.1);
 }
 
@@ -604,26 +661,17 @@ footer{
         text-align: center;
     }
 
-/* TIENDA */
-    .mainTienda .lista{
-        display: grid;
-        grid-template-areas: "pro1"
-                             "pro2"
-                             "pro3"
-                             "pro4"
-                             "pro5"
-                             "pro6";
-    }
-
-    footer{
-        flex-direction: column;
-    }
-
-    /* CONTACTO */
+/* CONTACTO */
     .mainContacto .mensaje{
         width: 200px;
         height: 250px;
         
+    }
+
+/* FOOTER */
+
+    footer{
+        flex-direction: column;
     }
 
 }
@@ -679,13 +727,8 @@ footer{
         justify-content:center;
     }
 
-/* TIENDA */
-    .mainTienda .lista{
-        display: grid;
-        grid-template-areas: "pro1 pro2"
-                             "pro3 pro4"
-                             "pro5 pro6";
-    }
+/* FOOTER */
+    
 
     footer{
         flex-direction: column;

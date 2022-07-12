@@ -8,13 +8,20 @@
     color: $color-principal-letras;
 }
 
-@mixin mainGeneral {
-    padding-top: 2rem;
-    padding-bottom: 10rem;
-    
-}
-
 @mixin img {
     border-radius: 5px;
     box-shadow: 4px 5px rgba(212, 95, 193, 0.2);
+}
+
+@mixin enlacePrecio{
+    width: 4rem;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    align-self: center;
+    color: black;
+    background-color: white;
+    font-size: 1.3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
 }

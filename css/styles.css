@@ -150,124 +150,12 @@ header {
     border-radius: 5px;
     box-shadow: 4px 5px rgba(212, 95, 193, 0.2);
     width: 300px;
-<<<<<<< HEAD
     margin-top: 2rem;
     transition: 0.5s; }
   .mainPropuestas img:hover {
     transform: scale(1.2); }
   .mainPropuestas .propuestas1 {
     grid-area: envio;
-=======
-    padding: 5px;
-    font-size: 2rem;
-    font-family: cursive;
-    text-align: start;
-    font-weight: bold;
-    background-color: #9e9c9c;
-    border-radius: 20px;
-    letter-spacing: 0.2; }
-
-/* PROPIEDADES DEL MAIN-NOSOTROS*/
-.mainNosotros {
-  padding-top: 2rem;
-  padding-bottom: 10rem;
-  background-color: whitesmoke;
-  border-top: 5px solid #ff00ea; }
-  .mainNosotros h1 {
-    padding: 1rem;
-    font-family: cursive;
-    font-weight: bold;
-    color: #a51da5; }
-  .mainNosotros .descripcion {
-    display: grid;
-    grid-template-areas: "imgN1 imgN2" "parrafoNos parrafoNos";
-    justify-items: center;
-    gap: 1rem; }
-  .mainNosotros .imgN1 {
-    grid-area: imgN1;
-    border-radius: 5px;
-    box-shadow: 4px 5px gray;
-    width: 75%; }
-  .mainNosotros .imgN2 {
-    grid-area: imgN2;
-    border-radius: 5px;
-    box-shadow: 4px 5px gray;
-    width: 75%; }
-  .mainNosotros .parrafoNos {
-    grid-area: parrafoNos;
-    width: 75%;
-    margin-top: 2rem;
-    font-size: 20px;
-    font-family: cursive;
-    font-weight: bold;
-    background-color: #9e9c9c;
-    border-radius: 20px;
-    letter-spacing: 0.2; }
-
-/* PROPIEDADES DE TIENDA-DULCE */
-.mainTienda {
-  padding-top: 2rem;
-  padding-bottom: 10rem;
-  background-color: whitesmoke;
-  border-top: 5px solid #ff00ea; }
-  .mainTienda h1 {
-    padding: 1rem;
-    font-family: cursive;
-    font-weight: bold;
-    color: #a51da5; }
-  .mainTienda div ul li {
-    list-style: none; }
-  .mainTienda .lista {
-    display: grid;
-    grid-template-areas: "pro1 pro2" "pro3 pro4" "pro5 pro6";
-    align-items: baseline; }
-  .mainTienda img {
-    border-radius: 5px;
-    box-shadow: 4px 5px gray;
-    width: 70%; }
-  .mainTienda .lista p {
-    padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.3rem;
-    font-weight: bold; }
-  .mainTienda .pro1 {
-    grid-area: pro1;
-    margin-bottom: 4.5rem;
-    padding-top: 1rem; }
-  .mainTienda .pro2 {
-    grid-area: pro2;
-    margin-bottom: 4.5rem;
-    padding-top: 1rem; }
-  .mainTienda .pro3 {
-    grid-area: pro3;
-    margin-bottom: 4.5rem;
-    padding-top: 1rem; }
-  .mainTienda .pro4 {
-    grid-area: pro4;
-    margin-bottom: 4.5rem;
-    padding-top: 1rem; }
-  .mainTienda .pro5 {
-    grid-area: pro5;
-    margin-bottom: 4.5rem;
-    padding-top: 2rem; }
-  .mainTienda .pro6 {
-    grid-area: pro6;
-    margin-bottom: 4.5rem;
-    padding-top: 2rem; }
-
-/* PROPIEDADES DE CONTACTO */
-.mainContacto {
-  padding-top: 2rem;
-  padding-bottom: 10rem;
-  background-color: whitesmoke;
-  border-top: 5px solid #ff00ea; }
-  .mainContacto h1 {
-    padding: 1rem;
-    font-family: cursive;
-    font-weight: bold;
-    color: #a51da5; }
-  .mainContacto form {
->>>>>>> master
     display: flex;
     justify-content: center; }
   .mainPropuestas .envio {
@@ -584,7 +472,6 @@ footer {
   /* INICIO */
   .estiloInicio main {
     display: grid;
-<<<<<<< HEAD
     grid-template-areas: "inicio" "mirar" "carro" "seccion" "contactar"; }
     .estiloInicio main .carousel-inner {
       width: 300px; }
@@ -601,30 +488,15 @@ footer {
     display: grid;
     grid-template-areas: "imgN1" "imgN2" "parrafoNos";
     gap: 1rem;
-=======
-    grid-template-areas: "img" "parrafo"; }
-    .mainPropuestas .propuestas img {
-      width: 75%; }
-  .mainNosotros .descripcion {
-    display: grid;
-    grid-template-areas: "imgN1" "imgN2" "parrafoNos";
-    gap: 2rem;
->>>>>>> master
     justify-content: center; }
   .mainNosotros .parrafoNos {
     width: 75%;
     text-align: center; }
-<<<<<<< HEAD
   /* CONTACTO */
   .mainContacto .mensaje {
     width: 200px;
     height: 250px; }
   /* FOOTER */
-=======
-  .mainTienda .lista {
-    display: grid;
-    grid-template-areas: "pro1" "pro2" "pro3" "pro4" "pro5" "pro6"; }
->>>>>>> master
   footer {
     flex-direction: column; } }
 
@@ -652,12 +524,6 @@ footer {
     grid-template-areas: "imgN1" "imgN2" "parrafoNos";
     gap: 2rem;
     justify-content: center; }
-<<<<<<< HEAD
   /* FOOTER */
-=======
-  .mainTienda .lista {
-    display: grid;
-    grid-template-areas: "pro1 pro2" "pro3 pro4" "pro5 pro6"; }
->>>>>>> master
   footer {
     flex-direction: column; } }

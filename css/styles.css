@@ -69,7 +69,7 @@ header {
 
 .estiloInicio main {
   display: grid;
-  grid-template-areas: "inicio inicio" "mirar carro" "seccion seccion" "contactar contactar"; }
+  grid-template-areas: "inicio inicio" "mirar carro" "seccion seccion" "contactar contactar"; }
   .estiloInicio main .inicio {
     grid-area: inicio;
     text-align: center;
@@ -129,7 +129,7 @@ header {
 
 .mainPropuestas {
   display: grid;
-  grid-template-areas: "h1Pro h1Pro h1Pro h1Pro" "parrafo parrafo parrafo parrafo" "seccionImg seccionImg seccionImg seccionImg" "seccionImg2 seccionImg2 seccionImg2 seccionImg2" "envio envio envio envio"; }
+  grid-template-areas: "h1Pro h1Pro h1Pro h1Pro" "parrafo parrafo parrafo parrafo" "seccionImg seccionImg seccionImg seccionImg" "seccionImg2 seccionImg2 seccionImg2 seccionImg2" "envio envio envio envio"; }
   .mainPropuestas h1 {
     grid-area: h1Pro;
     text-align: center;
@@ -180,7 +180,7 @@ header {
 
 .mainNosotros .descripcion {
   display: grid;
-  grid-template-areas: "imgN1 imgN2" "parrafoNos parrafoNos";
+  grid-template-areas: "imgN1 imgN2" "parrafoNos parrafoNos";
   justify-items: center;
   gap: 1rem; }
 
@@ -472,7 +472,7 @@ footer {
   /* INICIO */
   .estiloInicio main {
     display: grid;
-    grid-template-areas: "inicio" "mirar" "carro" "seccion" "contactar"; }
+    grid-template-areas: "inicio" "mirar" "carro" "seccion" "contactar"; }
     .estiloInicio main .carousel-inner {
       width: 300px; }
     .estiloInicio main .carousel {
@@ -486,7 +486,7 @@ footer {
   /* NOSOTROS */
   .mainNosotros .descripcion {
     display: grid;
-    grid-template-areas: "imgN1" "imgN2" "parrafoNos";
+    grid-template-areas: "imgN1" "imgN2" "parrafoNos";
     gap: 1rem;
     justify-content: center; }
   .mainNosotros .parrafoNos {
@@ -515,13 +515,13 @@ footer {
   /* PROPUESTAS */
   .mainPropuestas .propuestas {
     display: grid;
-    grid-template-areas: "img" "parrafo"; }
+    grid-template-areas: "img" "parrafo"; }
     .mainPropuestas .propuestas img {
       width: 75%; }
   /* NOSOTROS */
   .mainNosotros .descripcion {
     display: grid;
-    grid-template-areas: "imgN1" "imgN2" "parrafoNos";
+    grid-template-areas: "imgN1" "imgN2" "parrafoNos";
     gap: 2rem;
     justify-content: center; }
   /* FOOTER */

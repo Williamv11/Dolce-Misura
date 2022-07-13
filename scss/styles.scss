@@ -85,7 +85,7 @@ header{
         grid-area: mirar;
         text-align: center;
         align-self: center;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-family: 'Titan One', cursive;
         color: $color-principal-letras;
         transition: 0.8s;
@@ -131,7 +131,7 @@ header{
 
     .card p{
         font-family: cursive;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: bold;
     }
 
@@ -250,7 +250,7 @@ header{
 
             span{
                 font-family: 'Dancing Script', cursive;
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
         }
     }
@@ -288,7 +288,7 @@ header{
 
     .card p{
         font-family: cursive;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: bold;
         
     }
@@ -309,7 +309,7 @@ header{
             background:linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4));
 
             a{
-                font-size: 1.8rem;
+                font-size: 1.5rem;
                 color: $color-principal-letras;
                 text-decoration: none;
                 background-color: rgba(255, 255, 255, 0.1);
@@ -349,7 +349,7 @@ header{
 
     .card p{
         font-family: cursive;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: bold;
         
     }
@@ -370,7 +370,7 @@ header{
             background:linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4));
 
             a{
-                font-size: 1.8rem;
+                font-size: 1.5rem;
                 color: $color-principal-letras;
                 text-decoration: none;
                 background-color: rgba(255, 255, 255, 0);
@@ -410,7 +410,7 @@ header{
 
     .card p{
         font-family: cursive;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: bold;
         
     }
@@ -431,7 +431,7 @@ header{
             background:linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4));
 
             a{
-                font-size: 1.8rem;
+                font-size: 1.5rem;
                 color: $color-principal-letras;
                 text-decoration: none;
                 background-color: rgba(255, 255, 255, 0);
@@ -450,6 +450,8 @@ header{
 }
 
 .mainContacto{
+
+    margin-bottom: 5rem;
 
     h1{
         @include tituloH1;
@@ -472,7 +474,7 @@ header{
     
     .formulario legend{
         font-family:cursive;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: bold;
     }
     
@@ -580,7 +582,7 @@ footer{
 
     .logoFooter{
         padding: 10px;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-family: 'Titan One', cursive;
         color: $color-principal-letras;
     }

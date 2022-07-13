@@ -14,7 +14,7 @@
 
 .estiloInicio main .contactar p, .mainPropuestas .parrafo, .mainPropuestas .envio, .mainNosotros .descripcion .parrafoNos, .mainTienda .contactarTienda p, .mainTiendaSalada .contactarTienda p, .mainTiendaRegalos .contactarTienda p {
   width: 75%;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: black;
@@ -42,7 +42,7 @@ header {
     justify-content: end; }
   header .barra a {
     color: #a51da5;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500; }
   header .barraM:hover {
     text-decoration: underline; }
@@ -75,7 +75,7 @@ header {
     grid-area: mirar;
     text-align: center;
     align-self: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Titan One', cursive;
     color: #a51da5;
     transition: 0.8s; }
@@ -101,7 +101,7 @@ header {
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(212, 95, 193, 0.2)); }
   .estiloInicio main .card p {
     font-family: cursive;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold; }
   .estiloInicio main .contactar {
     grid-area: contactar;
@@ -177,7 +177,7 @@ header {
     background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(212, 95, 193, 0.6)); }
     .mainNosotros .descripcion .parrafoNos span {
       font-family: 'Dancing Script', cursive;
-      font-size: 2.5rem; }
+      font-size: 2rem; }
 
 /* PROPIEDADES DE TIENDA-DULCE */
 .estiloDulce {
@@ -204,11 +204,11 @@ header {
 
 .mainTienda .card p {
   font-family: cursive;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold; }
 
 .mainTienda a {
-  width: 4rem;
+  width: 6rem;
   border-radius: 5px;
   margin-bottom: 5px;
   align-self: center;
@@ -227,7 +227,7 @@ header {
   .mainTienda .contactarTienda p {
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4)); }
     .mainTienda .contactarTienda p a {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       color: #a51da5;
       text-decoration: none;
       background-color: rgba(255, 255, 255, 0.1); }
@@ -257,11 +257,11 @@ header {
 
 .mainTiendaSalada .card p {
   font-family: cursive;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold; }
 
 .mainTiendaSalada a {
-  width: 4rem;
+  width: 6rem;
   border-radius: 5px;
   margin-bottom: 5px;
   align-self: center;
@@ -280,7 +280,7 @@ header {
   .mainTiendaSalada .contactarTienda p {
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4)); }
     .mainTiendaSalada .contactarTienda p a {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       color: #a51da5;
       text-decoration: none;
       background-color: rgba(255, 255, 255, 0); }
@@ -310,11 +310,11 @@ header {
 
 .mainTiendaRegalos .card p {
   font-family: cursive;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold; }
 
 .mainTiendaRegalos a {
-  width: 4rem;
+  width: 6rem;
   border-radius: 5px;
   margin-bottom: 5px;
   align-self: center;
@@ -333,7 +333,7 @@ header {
   .mainTiendaRegalos .contactarTienda p {
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4)); }
     .mainTiendaRegalos .contactarTienda p a {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       color: #a51da5;
       text-decoration: none;
       background-color: rgba(255, 255, 255, 0); }
@@ -345,46 +345,41 @@ header {
   background-size: cover;
   background-position: center; }
 
-.mainContacto h1 {
-  text-align: center;
-  padding: 3rem;
-  font-family: 'Titan One', cursive;
-  font-weight: 500;
-  color: #cc4ccc; }
-
-.mainContacto form {
-  display: flex;
-  justify-content: center; }
-
-.mainContacto .formulario {
-  width: 75%;
-  margin: 10px;
-  border: solid 2px gray;
-  border-radius: 1rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4));
-  box-shadow: 4px 5px rgba(155, 155, 155, 0.3);
-  font-size: 1.3rem; }
-
-.mainContacto .formulario legend {
-  font-family: cursive;
-  font-size: 1.8rem;
-  font-weight: bold; }
-
-.mainContacto .formulario div {
-  padding: 5px;
-  margin: 5px;
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
-
-.mainContacto .nombres {
-  padding-left: 1rem; }
-
-.mainContacto .mails {
-  padding-left: 1.9rem; }
-
-.mainContacto .mensaje {
-  width: 500px;
-  height: 250px; }
+.mainContacto {
+  margin-bottom: 5rem; }
+  .mainContacto h1 {
+    text-align: center;
+    padding: 3rem;
+    font-family: 'Titan One', cursive;
+    font-weight: 500;
+    color: #cc4ccc; }
+  .mainContacto form {
+    display: flex;
+    justify-content: center; }
+  .mainContacto .formulario {
+    width: 75%;
+    margin: 10px;
+    border: solid 2px gray;
+    border-radius: 1rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4));
+    box-shadow: 4px 5px rgba(155, 155, 155, 0.3);
+    font-size: 1.3rem; }
+  .mainContacto .formulario legend {
+    font-family: cursive;
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .mainContacto .formulario div {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .mainContacto .nombres {
+    padding-left: 1rem; }
+  .mainContacto .mails {
+    padding-left: 1.9rem; }
+  .mainContacto .mensaje {
+    width: 500px;
+    height: 250px; }
 
 /* PROPIEDADES DE ZOOM */
 .zoom {
@@ -424,15 +419,15 @@ footer {
   footer div a {
     color: black;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold; }
   footer .parraFooter {
     color: black;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold; }
   footer .contacto {
     color: #272727;
-    font-size: 1.8rem; }
+    font-size: 1.5rem; }
   footer .volver a {
     color: black;
     text-decoration: none; }
@@ -440,7 +435,7 @@ footer {
     color: black; }
   footer .logoFooter {
     padding: 10px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Titan One', cursive;
     color: #a51da5; }
 

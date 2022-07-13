@@ -26,14 +26,6 @@ header{
         margin-left: 3rem;
     }
 
-    .titulo{
-        color: $color-principal-letras;
-        font-size: 2.5rem;
-        padding-bottom: 1.2rem;
-        font-family: 'Inconsolata', monospace;
-        font-weight: bold;
-    }
-
     .container-fluid{
         display: flex;
     }
@@ -236,16 +228,10 @@ header{
 /* PROPIEDADES DEL MAIN-NOSOTROS*/
 
 .estiloNosotros{
-    background-image: url(../img/fondos/zach-miles-BE9AifuJfD4-unsplash.jpg);
+    background-image: url(../img/fondos/freunde-des-snacks-e-v-sKsmhqxiTR4-unsplash.jpg);
     width: 100%;
     background-size: cover;
     background-position: center;
-    
-    header{
-        .barra a{
-            color:rgb(196, 72, 196);
-        }
-    }
 }
 
 .mainNosotros{
@@ -613,7 +599,13 @@ footer{
                              "seccion"
                              "contactar";
 
-        
+        h1{
+            font-size: 1.8rem;
+        }
+
+        .mirar{
+            font-size: 1.6rem;
+        }
 
         .carousel-inner{
             width: 300px;
@@ -623,31 +615,108 @@ footer{
             width: 300px;
         }
 
-        .card{
-            width: 80%;
-        }
         .card p{
             font-family: cursive;
-            font-size: 2.3rem;
+            font-size: 1.3rem;
             font-weight: bold;
+            text-align: center;
+        }
+
+        .contactar p{
+            font-size: 1.3rem;
+        }
+    }
+
+/* PROPUESTAS */
+
+    .estiloPropuestas{
+        h1{
+            font-size: 1.6rem;
+        }
+
+        .mainPropuestas p{
+            font-size: 1.3rem;
         }
     }
 
 /* NOSOTROS */
-    .mainNosotros .descripcion{
+
+    .estiloNosotros .mainNosotros{
+        h1{
+            font-size: 1.6rem;
+        }
+        
+    }
+    .estiloNosotros .mainNosotros .descripcion{
         justify-content:center;
-        min-width: 370px;
     }
 
-    .mainNosotros .parrafoNos{
+    .estiloNosotros .mainNosotros .parrafoNos{
         text-align: center;
+        font-size: 1.3rem;
+    }
+
+/* TIENDA-DULCE */
+
+    .estiloDulce{
+        .mainTienda h1{
+            font-size: 1.6rem;
+        }
+
+        .mainTienda p{
+            font-size: 1.3rem;
+        }
+
+        .mainTienda p a{
+            font-size: 1.3rem;
+        }
+    }
+
+    /* TIENDA-SALADOS */
+
+    .estiloSalado{
+        .mainTiendaSalada h1{
+            font-size: 1.6rem;
+        }
+
+        .mainTiendaSalada p{
+            font-size: 1.3rem;
+        }
+
+        .mainTiendaSalada p a{
+            font-size: 1.3rem;
+        }
+    }
+
+    /* TIENDA-REGALOS */
+
+    .estiloRegalos{
+        .mainTiendaRegalos h1{
+            font-size: 1.6rem;
+        }
+
+        .mainTiendaRegalos p{
+            font-size: 1.3rem;
+        }
+
+        .mainTiendaRegalos p a{
+            font-size: 1.3rem;
+        }
     }
 
 /* CONTACTO */
+
+    .mainContacto h1{
+        font-size: 1.6rem;
+    }
+
+    .formulario{
+        text-align: center;
+    }
+
     .mainContacto .mensaje{
         width: 200px;
         height: 250px;
-        
     }
 
 /* FOOTER */

@@ -253,35 +253,22 @@ header{
     h1{
         @include tituloH1
     }
-
+    
     .descripcion{
-        display: grid;
-        grid-template-areas: "imgN1 imgN2"
-                             "parrafoNos parrafoNos";
-        justify-items: center;
-        gap: 1rem;
-    }
-    
-    .imgN1{
-        grid-area: imgN1;
-        @include img;
-        width: 75%;
-    }
-    
-    .imgN2{
-        grid-area: imgN2;
-        @include img;
-        width: 75%;
-    }
-    
-    .parrafoNos{
-        span{
-            font-family: 'Dancing Script', cursive;
-            font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+
+        .parrafoNos{
+            @extend %textos;
+            background:linear-gradient(rgba(255, 255, 255, 0.6), rgba(212, 95, 193, 0.6));
+
+            span{
+                font-family: 'Dancing Script', cursive;
+                font-size: 2.5rem;
+            }
         }
-        @extend %textos;
-        background:linear-gradient(rgba(255, 255, 255, 0.6), rgba(212, 95, 193, 0.6));
     }
+    
 }
 
 /* PROPIEDADES DE TIENDA-DULCE */
@@ -648,16 +635,11 @@ footer{
 
 /* NOSOTROS */
     .mainNosotros .descripcion{
-        display: grid;
-        grid-template-areas: "imgN1"
-                             "imgN2"
-                             "parrafoNos";
-        gap: 1rem; 
         justify-content:center;
+        min-width: 370px;
     }
 
     .mainNosotros .parrafoNos{
-        width: 75%;
         text-align: center;
     }
 
@@ -719,11 +701,6 @@ footer{
 
 /* NOSOTROS */
     .mainNosotros .descripcion{
-        display: grid;
-        grid-template-areas: "imgN1"
-                             "imgN2"
-                             "parrafoNos";
-        gap: 2rem; 
         justify-content:center;
     }
 

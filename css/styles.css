@@ -12,7 +12,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-radius: 15px; }
 
-.estiloInicio main .contactar p, .mainPropuestas .parrafo, .mainPropuestas .envio, .mainNosotros .parrafoNos, .mainTienda .contactarTienda p, .mainTiendaSalada .contactarTienda p, .mainTiendaRegalos .contactarTienda p {
+.estiloInicio main .contactar p, .mainPropuestas .parrafo, .mainPropuestas .envio, .mainNosotros .descripcion .parrafoNos, .mainTienda .contactarTienda p, .mainTiendaSalada .contactarTienda p, .mainTiendaRegalos .contactarTienda p {
   width: 75%;
   font-size: 1.8rem;
   font-weight: bold;
@@ -179,28 +179,13 @@ header {
   color: #a51da5; }
 
 .mainNosotros .descripcion {
-  display: grid;
-  grid-template-areas: "imgN1 imgN2" "parrafoNos parrafoNos";
-  justify-items: center;
-  gap: 1rem; }
-
-.mainNosotros .imgN1 {
-  grid-area: imgN1;
-  border-radius: 5px;
-  box-shadow: 4px 5px rgba(212, 95, 193, 0.2);
-  width: 75%; }
-
-.mainNosotros .imgN2 {
-  grid-area: imgN2;
-  border-radius: 5px;
-  box-shadow: 4px 5px rgba(212, 95, 193, 0.2);
-  width: 75%; }
-
-.mainNosotros .parrafoNos {
-  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(212, 95, 193, 0.6)); }
-  .mainNosotros .parrafoNos span {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem; }
+  display: flex;
+  justify-content: center; }
+  .mainNosotros .descripcion .parrafoNos {
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(212, 95, 193, 0.6)); }
+    .mainNosotros .descripcion .parrafoNos span {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2.5rem; }
 
 /* PROPIEDADES DE TIENDA-DULCE */
 .estiloDulce {
@@ -485,12 +470,9 @@ footer {
       font-weight: bold; }
   /* NOSOTROS */
   .mainNosotros .descripcion {
-    display: grid;
-    grid-template-areas: "imgN1" "imgN2" "parrafoNos";
-    gap: 1rem;
-    justify-content: center; }
+    justify-content: center;
+    min-width: 370px; }
   .mainNosotros .parrafoNos {
-    width: 75%;
     text-align: center; }
   /* CONTACTO */
   .mainContacto .mensaje {
@@ -520,9 +502,6 @@ footer {
       width: 75%; }
   /* NOSOTROS */
   .mainNosotros .descripcion {
-    display: grid;
-    grid-template-areas: "imgN1" "imgN2" "parrafoNos";
-    gap: 2rem;
     justify-content: center; }
   /* FOOTER */
   footer {

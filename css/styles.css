@@ -103,7 +103,8 @@ header {
   .estiloInicio main .card p {
     font-family: cursive;
     font-size: 1.5rem;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center; }
   .estiloInicio main .contactar {
     grid-area: contactar;
     display: flex;
@@ -206,7 +207,8 @@ header {
 .mainTienda .card p {
   font-family: cursive;
   font-size: 1.5rem;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 .mainTienda .compras {
   display: flex;
@@ -265,7 +267,8 @@ header {
 .mainTiendaSalada .card p {
   font-family: cursive;
   font-size: 1.5rem;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 .mainTiendaSalada .compras {
   display: flex;
@@ -324,7 +327,8 @@ header {
 .mainTiendaRegalos .card p {
   font-family: cursive;
   font-size: 1.5rem;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
 
 .mainTiendaRegalos .compras {
   display: flex;
@@ -386,7 +390,8 @@ header {
   .mainContacto .formulario legend {
     font-family: cursive;
     font-size: 1.5rem;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center; }
   .mainContacto .formulario div {
     padding: 5px;
     margin: 5px;
@@ -472,7 +477,7 @@ footer {
     display: grid;
     grid-template-areas: "inicio" "mirar" "carro" "seccion" "contactar"; }
     .estiloInicio main h1 {
-      font-size: 1.8rem; }
+      font-size: 1.7rem; }
     .estiloInicio main .mirar {
       font-size: 1.6rem; }
     .estiloInicio main .carousel-inner {
@@ -481,19 +486,19 @@ footer {
       width: 300px; }
     .estiloInicio main .card p {
       font-family: cursive;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: bold;
       text-align: center; }
     .estiloInicio main .contactar p {
       font-size: 1.3rem; }
   /* PROPUESTAS */
   .estiloPropuestas h1 {
-    font-size: 1.6rem; }
+    font-size: 1.7rem; }
   .estiloPropuestas .mainPropuestas p {
     font-size: 1.3rem; }
   /* NOSOTROS */
   .estiloNosotros .mainNosotros h1 {
-    font-size: 1.6rem; }
+    font-size: 1.7rem; }
   .estiloNosotros .mainNosotros .descripcion {
     justify-content: center; }
   .estiloNosotros .mainNosotros .parrafoNos {
@@ -501,28 +506,37 @@ footer {
     font-size: 1.3rem; }
   /* TIENDA-DULCE */
   .estiloDulce .mainTienda h1 {
-    font-size: 1.6rem; }
+    font-size: 1.7rem; }
   .estiloDulce .mainTienda p {
-    font-size: 1.3rem; }
+    font-family: cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center; }
   .estiloDulce .mainTienda p a {
     font-size: 1.3rem; }
   /* TIENDA-SALADOS */
   .estiloSalado .mainTiendaSalada h1 {
-    font-size: 1.6rem; }
+    font-size: 1.7rem; }
   .estiloSalado .mainTiendaSalada p {
-    font-size: 1.3rem; }
+    font-family: cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center; }
   .estiloSalado .mainTiendaSalada p a {
     font-size: 1.3rem; }
   /* TIENDA-REGALOS */
   .estiloRegalos .mainTiendaRegalos h1 {
-    font-size: 1.6rem; }
+    font-size: 1.7rem; }
   .estiloRegalos .mainTiendaRegalos p {
-    font-size: 1.3rem; }
+    font-family: cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center; }
   .estiloRegalos .mainTiendaRegalos p a {
     font-size: 1.3rem; }
   /* CONTACTO */
   .mainContacto h1 {
-    font-size: 1.6rem; }
+    font-size: 1.7rem; }
   .mainContacto .formulario {
     text-align: center; }
   .mainContacto .campoImput {
@@ -544,14 +558,45 @@ footer {
     width: 80%; }
   .estiloInicio main .card p {
     font-family: cursive;
-    font-size: 2.1rem;
-    font-weight: bold; }
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center; }
   /* PROPUESTAS */
   .mainPropuestas .propuestas {
     display: grid;
     grid-template-areas: "img" "parrafo"; }
     .mainPropuestas .propuestas img {
       width: 75%; }
+  /* TIENDA-DULCE */
+  .estiloDulce .mainTienda h1 {
+    font-size: 1.7rem; }
+  .estiloDulce .mainTienda p {
+    font-family: cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center; }
+  .estiloDulce .mainTienda p a {
+    font-size: 1.3rem; }
+  /* TIENDA-SALADOS */
+  .estiloSalado .mainTiendaSalada h1 {
+    font-size: 1.7rem; }
+  .estiloSalado .mainTiendaSalada p {
+    font-family: cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center; }
+  .estiloSalado .mainTiendaSalada p a {
+    font-size: 1.3rem; }
+  /* TIENDA-REGALOS */
+  .estiloRegalos .mainTiendaRegalos h1 {
+    font-size: 1.7rem; }
+  .estiloRegalos .mainTiendaRegalos p {
+    font-family: cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center; }
+  .estiloRegalos .mainTiendaRegalos p a {
+    font-size: 1.3rem; }
   /* NOSOTROS */
   .mainNosotros .descripcion {
     justify-content: center; }

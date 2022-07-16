@@ -621,7 +621,7 @@ footer{
                              "contactar";
 
         h1{
-            font-size: 1.8rem;
+            font-size: 1.7rem;
         }
 
         .mirar{
@@ -637,10 +637,7 @@ footer{
         }
 
         .card p{
-            font-family: cursive;
-            font-size: 1.3rem;
-            font-weight: bold;
-            text-align: center;
+            @include fuenteQuerie;
         }
 
         .contactar p{
@@ -652,7 +649,7 @@ footer{
 
     .estiloPropuestas{
         h1{
-            font-size: 1.6rem;
+            font-size: 1.7rem;
         }
 
         .mainPropuestas p{
@@ -664,7 +661,7 @@ footer{
 
     .estiloNosotros .mainNosotros{
         h1{
-            font-size: 1.6rem;
+            font-size: 1.7rem;
         }
         
     }
@@ -681,11 +678,11 @@ footer{
 
     .estiloDulce{
         .mainTienda h1{
-            font-size: 1.6rem;
+            font-size: 1.7rem;
         }
 
         .mainTienda p{
-            font-size: 1.3rem;
+            @include fuenteQuerie;
         }
 
         .mainTienda p a{
@@ -697,11 +694,11 @@ footer{
 
     .estiloSalado{
         .mainTiendaSalada h1{
-            font-size: 1.6rem;
+            font-size: 1.7rem;
         }
 
         .mainTiendaSalada p{
-            font-size: 1.3rem;
+            @include fuenteQuerie;
         }
 
         .mainTiendaSalada p a{
@@ -713,11 +710,11 @@ footer{
 
     .estiloRegalos{
         .mainTiendaRegalos h1{
-            font-size: 1.6rem;
+            font-size: 1.7rem;
         }
 
         .mainTiendaRegalos p{
-            font-size: 1.3rem;
+            @include fuenteQuerie;
         }
 
         .mainTiendaRegalos p a{
@@ -728,7 +725,7 @@ footer{
 /* CONTACTO */
 
     .mainContacto h1{
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
 
     .mainContacto .formulario{
@@ -776,9 +773,7 @@ footer{
         }
 
         .card p{
-            font-family: cursive;
-            font-size: 2.1rem;
-            font-weight: bold;
+            @include fuenteQuerie;
         }
     }
 
@@ -792,6 +787,54 @@ footer{
             width: 75%;
         }
     }
+
+/* TIENDA-DULCE */
+
+.estiloDulce{
+    .mainTienda h1{
+        font-size: 1.7rem;
+    }
+
+    .mainTienda p{
+        @include fuenteQuerie;
+    }
+
+    .mainTienda p a{
+        font-size: 1.3rem;
+    }
+}
+
+/* TIENDA-SALADOS */
+
+.estiloSalado{
+    .mainTiendaSalada h1{
+        font-size: 1.7rem;
+    }
+
+    .mainTiendaSalada p{
+        @include fuenteQuerie;
+    }
+
+    .mainTiendaSalada p a{
+        font-size: 1.3rem;
+    }
+}
+
+/* TIENDA-REGALOS */
+
+.estiloRegalos{
+    .mainTiendaRegalos h1{
+        font-size: 1.7rem;
+    }
+
+    .mainTiendaRegalos p{
+        @include fuenteQuerie;
+    }
+
+    .mainTiendaRegalos p a{
+        font-size: 1.3rem;
+    }
+}
 
 /* NOSOTROS */
     .mainNosotros .descripcion{

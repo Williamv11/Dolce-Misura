@@ -37,6 +37,7 @@
     font-family: cursive;
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
 }
 
 @mixin flex ($display, $content, $align) {
@@ -45,3 +46,9 @@
     align-items: $align;
 }
 
+@mixin fuenteQuerie {
+    font-family: cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}

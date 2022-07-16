@@ -96,9 +96,7 @@ header{
     } 
 
     .divCarro{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);
     }
 
     .foto{
@@ -130,16 +128,11 @@ header{
     }
 
     .card p{
-        font-family: cursive;
-        font-size: 1.5rem;
-        font-weight: bold;
+        @include cartaP;
     }
 
     .contactar{
-        grid-area: contactar;
-        display: flex;
-        justify-content: center;
-        margin-top: 8rem;
+        @include contactar;
         
 
         p{
@@ -182,9 +175,7 @@ header{
 
     .propuestas{
         grid-area: parrafo;
-        display: flex;
-        justify-content: center;
-        justify-items: center;
+        @include flex(flex, center, center);
     }
 
     .parrafo{
@@ -276,7 +267,7 @@ header{
 
     .seccion{
         margin-top: 5rem;
-        margin-bottom: 5rem;
+        margin-bottom: 10rem;
         @extend %seccion;
     }
 
@@ -287,21 +278,28 @@ header{
     }
 
     .card p{
-        font-family: cursive;
-        font-size: 1.5rem;
-        font-weight: bold;
+        @include cartaP;
         
     }
 
-    a{
-        @include enlacePrecio;
+    .compras{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+
+        button{
+            @extend %botones;
+            margin-left: 5px;
+        }
+
+        a{
+            @include enlaceComprar;
+        }
+
     }
 
     .contactarTienda{
-        grid-area: contactar;
-        display: flex;
-        justify-content: center;
-        margin-top: 8rem;
+        @include contactar;
         
 
         p{
@@ -348,21 +346,28 @@ header{
     }
 
     .card p{
-        font-family: cursive;
-        font-size: 1.5rem;
-        font-weight: bold;
+        @include cartaP;
         
     }
+    
+    .compras{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
 
-    a{
-        @include enlacePrecio;
+        button{
+            @extend %botones;
+            margin-left: 5px;
+        }
+
+        a{
+            @include enlaceComprar;
+        }
+
     }
 
     .contactarTienda{
-        grid-area: contactar;
-        display: flex;
-        justify-content: center;
-        margin-top: 8rem;
+        @include contactar;
         
 
         p{
@@ -382,7 +387,7 @@ header{
 /* PROPIEDADES DE TIENDA-REGALOS */
 
 .estiloRegalos{
-    background-image: url(../img/fondos/jojo-yuen-sharemyfoodd-hidpWiMIFw0-unsplash.jpg);
+    background-image: url(../img/fondos/serghei-savchiuc-Ic0E0y6Zo20-unsplash.jpg);
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -409,21 +414,28 @@ header{
     }
 
     .card p{
-        font-family: cursive;
-        font-size: 1.5rem;
-        font-weight: bold;
+        @include cartaP;
         
     }
 
-    a{
-        @include enlacePrecio;
+    .compras{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+
+        button{
+            @extend %botones;
+            margin-left: 5px;
+        }
+
+        a{
+            @include enlaceComprar;
+        }
+
     }
     
     .contactarTienda{
-        grid-area: contactar;
-        display: flex;
-        justify-content: center;
-        margin-top: 8rem;
+        @include contactar;
         
 
         p{
@@ -473,9 +485,7 @@ header{
     }
     
     .formulario legend{
-        font-family:cursive;
-        font-size: 1.5rem;
-        font-weight: bold;
+        @include cartaP;
     }
     
     .formulario div{
@@ -509,12 +519,21 @@ header{
     overflow: hidden;
 }
 
-.seccion div{
+.seccion .card img{
     border-radius: 5px;
     transition: 0.8s;
 }
 
-.seccion div:hover{
+.seccion .card img:hover{
+    transform: scale(1.1);
+}
+
+.seccion .compras a{
+    border-radius: 5px;
+    transition: 0.8s;
+}
+
+.seccion .compras a:hover{
     transform: scale(1.1);
 }
 
@@ -523,7 +542,7 @@ header{
 .enlace{
     position: fixed;
     bottom: 10rem;
-    right: 0;
+    right: 5px;
 }
 
 .colori{

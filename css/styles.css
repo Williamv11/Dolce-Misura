@@ -4,13 +4,14 @@
   padding: 0;
   box-sizing: border-box; }
 
-.mainContacto .botones {
-  width: 5rem;
+.mainTienda .compras button, .mainTiendaSalada .compras button, .mainTiendaRegalos .compras button, .mainContacto .botones {
+  width: 5.5rem;
   padding: 5px;
   text-align: center;
-  border-color: #e482bb;
+  border-color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  border-radius: 15px; }
+  font-weight: bold;
+  border-radius: 0.5rem; }
 
 .estiloInicio main .contactar p, .mainPropuestas .parrafo, .mainPropuestas .envio, .mainNosotros .descripcion .parrafoNos, .mainTienda .contactarTienda p, .mainTiendaSalada .contactarTienda p, .mainTiendaRegalos .contactarTienda p {
   width: 75%;
@@ -135,7 +136,7 @@ header {
     grid-area: parrafo;
     display: flex;
     justify-content: center;
-    justify-items: center; }
+    align-items: center; }
   .mainPropuestas .seccionImg {
     grid-area: seccionImg; }
   .mainPropuestas .seccionImg2 {
@@ -195,7 +196,7 @@ header {
 
 .mainTienda .seccion {
   margin-top: 5rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 10rem; }
 
 .mainTienda .card {
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(212, 95, 193, 0.4));
@@ -207,17 +208,23 @@ header {
   font-size: 1.5rem;
   font-weight: bold; }
 
-.mainTienda a {
-  width: 6rem;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  align-self: center;
-  color: black;
-  background-color: white;
-  font-size: 1.3rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bolder;
-  text-decoration: none; }
+.mainTienda .compras {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px; }
+  .mainTienda .compras button {
+    margin-left: 5px; }
+  .mainTienda .compras a {
+    width: 6rem;
+    border-radius: 0.5rem;
+    margin-bottom: 5px;
+    align-self: flex-end;
+    margin-right: 5px;
+    color: black;
+    background-color: white;
+    font-size: 1.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold; }
 
 .mainTienda .contactarTienda {
   grid-area: contactar;
@@ -260,17 +267,23 @@ header {
   font-size: 1.5rem;
   font-weight: bold; }
 
-.mainTiendaSalada a {
-  width: 6rem;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  align-self: center;
-  color: black;
-  background-color: white;
-  font-size: 1.3rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bolder;
-  text-decoration: none; }
+.mainTiendaSalada .compras {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px; }
+  .mainTiendaSalada .compras button {
+    margin-left: 5px; }
+  .mainTiendaSalada .compras a {
+    width: 6rem;
+    border-radius: 0.5rem;
+    margin-bottom: 5px;
+    align-self: flex-end;
+    margin-right: 5px;
+    color: black;
+    background-color: white;
+    font-size: 1.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold; }
 
 .mainTiendaSalada .contactarTienda {
   grid-area: contactar;
@@ -287,7 +300,7 @@ header {
 
 /* PROPIEDADES DE TIENDA-REGALOS */
 .estiloRegalos {
-  background-image: url(../img/fondos/jojo-yuen-sharemyfoodd-hidpWiMIFw0-unsplash.jpg);
+  background-image: url(../img/fondos/serghei-savchiuc-Ic0E0y6Zo20-unsplash.jpg);
   width: 100%;
   background-size: cover;
   background-position: center; }
@@ -313,17 +326,23 @@ header {
   font-size: 1.5rem;
   font-weight: bold; }
 
-.mainTiendaRegalos a {
-  width: 6rem;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  align-self: center;
-  color: black;
-  background-color: white;
-  font-size: 1.3rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bolder;
-  text-decoration: none; }
+.mainTiendaRegalos .compras {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px; }
+  .mainTiendaRegalos .compras button {
+    margin-left: 5px; }
+  .mainTiendaRegalos .compras a {
+    width: 6rem;
+    border-radius: 0.5rem;
+    margin-bottom: 5px;
+    align-self: flex-end;
+    margin-right: 5px;
+    color: black;
+    background-color: white;
+    font-size: 1.4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold; }
 
 .mainTiendaRegalos .contactarTienda {
   grid-area: contactar;
@@ -385,18 +404,25 @@ header {
 .zoom {
   overflow: hidden; }
 
-.seccion div {
+.seccion .card img {
   border-radius: 5px;
   transition: 0.8s; }
 
-.seccion div:hover {
+.seccion .card img:hover {
+  transform: scale(1.1); }
+
+.seccion .compras a {
+  border-radius: 5px;
+  transition: 0.8s; }
+
+.seccion .compras a:hover {
   transform: scale(1.1); }
 
 /* PROPIEDADES DEL BOTON WPP*/
 .enlace {
   position: fixed;
   bottom: 10rem;
-  right: 0; }
+  right: 5px; }
 
 .colori {
   background-color: #4f9909;
